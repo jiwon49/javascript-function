@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+	var A = [10,8]; //A학생 성적 배열
+	var B = [1,2]; //B학생 점수 배열
+	var C = [9,5]; //C학생 점수 배열
+//성적은 중간고사, 기말고사 순
+
+	function graph(n){ //성적만큼 *로 출력하는 함수
+		if(n==1){ document.write('A : ');
+			  for(var i=1;i<=A[0];i++) { document.write('*'); }
+			  for(var i=1;i<=10-A[0];i++) { document.write('_');} //10점만점
+						     document.write('+');
+			  for(var i=1;i<=A[1];i++) { document.write('*'); }
+			  for(var i=1;i<=10-A[1];i++) { document.write('_');} //10점만점
+			
+			  for(var i=1;i<=A[0]+A[1];i++) { document.write('*'); }
+			  for(var i=1;i<=20-(A[0]+A[1]);i++) { document.write('_');} //20점만점
+						     document.write('<br>');
+			};
+		if(n==2){ document.write('B : ');
+			  for(var i=1;i<=B[0];i++) { document.write('*'); }
+			  for(var i=1;i<=10-B[0];i++) { document.write('_');} //10점만점
+						     document.write('+');
+			  for(var i=1;i<=B[1];i++) { document.write('*'); }
+			  for(var i=1;i<=10-B[1];i++) { document.write('_');} //10점만점
+
+			  for(var i=1;i<=B[0]+B[1];i++) { document.write('*'); }
+			  for(var i=1;i<=20-(B[0]+B[1]);i++) { document.write('_');} //20점만점
+						     document.write('<br>');
+			};
+		if(n==3){ document.write('C : ');
+			  for(var i=1;i<=C[0];i++) { document.write('*'); }
+			  for(var i=1;i<=10-C[0];i++) { document.write('_');} //10점만점
+						     document.write('+');
+			  for(var i=1;i<=C[1];i++) { document.write('*'); }
+			  for(var i=1;i<=10-C[1];i++) { document.write('_');} //10점만점
+
+			  for(var i=1;i<=C[0]+C[1];i++) { document.write('*'); }
+			  for(var i=1;i<=20-(C[0]+C[1]);i++) { document.write('_');} //20점만점
+						     document.write('<br>');
+			};
+		}
+
+	for(var j=1; j<=3; j++) graph(j);
+	
+
+    </script>
+</head>
+<body>
+</body>
+</html>

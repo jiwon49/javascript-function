@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+
+   var A = [90,80,50,40,10]; //A학생 점수 배열
+   var B = [90,30,100,50,50]; //B학생 점수 배열
+   var C = [20,30,60,50,20]; //C학생 점수 배열
+//성적은 javascript,python,ruby,swift 순
+
+   function average(n){
+
+      var total = 0;         
+   if(n==1){for(var i=0; i<5; i++){total += A[i]}};
+   if(n==2){for(var i=0; i<5; i++){total += B[i]}};
+   if(n==3){for(var i=0; i<5; i++){total += C[i]}};
+
+   var average = total/5;
+
+	return average;
+
+   }
+
+   
+   function max(s){
+   var max_grade=0;
+   if(s==1){for(var i=0; i<5; i++){if(max_grade<=A[i])max_grade=A[i]}};
+   if(s==2){for(var i=0; i<5; i++){if(max_grade<=B[i])max_grade=B[i]}};
+   if(s==3){for(var i=0; i<5; i++){if(max_grade<=C[i])max_grade=C[i]}};
+
+ 	return max_grade;
+   }
+   
+
+   function min(h){
+   var min_grade=100;
+   if(h==1){for(var i=0; i<5; i++){if(min_grade>=A[i])min_grade=A[i]}};
+   if(h==2){for(var i=0; i<5; i++){if(min_grade>=B[i])min_grade=B[i]}};
+   if(h==3){for(var i=0; i<5; i++){if(min_grade>=C[i])min_grade=C[i]}};
+
+
+	return min_grade;
+   }
+   
+   
+   for(var a=1;a<4;a++){
+	var str = ' 학생의 평균 점수는 ' + average(a) + ' , 최고 점수는 '+ max(a)+' , 최하 점수는 ' + min(a) + ' 입니다.' +'<br>';
+	if(a==1) console.log('A'+ str);
+	if(a==2) console.log('B'+ str);
+	if(a==3) console.log('C'+ str);
+	};
+
+    </script>
+</head>
+<body>
+</body>
+</html>
