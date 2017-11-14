@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+      function print_fizz_buzz() { //3의 배수일경우 fizz, 5의 배수일 경우 buzz, 3,5의 배수 fizzbuzz
+        for(var i=1; i<=100; i++){
+		if(i%3==0 && i%5==0) console.log(i+' : FizzBuzz');  //3,5의 배수일 경우
+		else if(i%3==0) console.log(i+' : Fizz');      // 3의 배수일 경우
+		else if(i%5==0) console.log(i+' : Buzz');      // 5의 배수일 경우
+		else console.log(i+' : '+i);                  //위의 경우 모두 해당이 안되는 경우
+	}
+      }
+
+      print_fizz_buzz();
+    </script>
+</head>
+<body>
+</body>
+</html>
