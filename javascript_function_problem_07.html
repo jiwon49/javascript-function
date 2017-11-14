@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+      function height() {
+
+	var a1=new Array(arguments.length); //입력받은 문자열 저장할 1차배열
+	var b1=new Array(arguments.length);
+	var c1=new Array(arguments.length);
+
+        var a2=new Array();
+        var b2=new Array();
+        var c2=new Array();
+
+	for(var i=0; i<4; i++){
+		for(var j=0; j<4; j++){
+			a2[i]=new Array();
+			a2[i][j]=new Array(); //첫번째 입력받는 O담는 2차배열 생성
+			b2[i]=new Array();
+			b2[i][j]=new Array(); //두번째 입력받는 O담는 2차배열 생성
+			c2[i]=new Array();
+			c2[i][j]=new Array(); //세번째 입력받는 O담는 2차배열 생성
+		}
+	}
+
+        for(var i = 0; i < a1.length; i++){
+          a1[i] = arguments[i];
+	  document.write(i+" "+arguments[i]);
+        }
+	
+
+      }
+
+
+      height('OO\nOO', 'OOOO\nOOOO');
+
+      function exepect(l, r) {
+        if (l === r)
+         console.log('pass');
+        else
+         console.log('fail');
+      }
+    </script>
+</head>
+<body>
+</body>
+</html>
