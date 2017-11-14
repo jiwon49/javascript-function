@@ -26,12 +26,12 @@
             for(var j=0; j<arguments.length; j++){
                star[i][j]="&nbsp;";
             }
-         }
+         }//공백으로 전체 초기화
 
    for(var i=0; i<arguments.length; i++){
       star[0][i]="-";
       star[11][i]="-";
-   }
+   } // 입력한 수만큼 위아래 - 입력
 
          var n=0;
          while(n<=j){
@@ -40,7 +40,7 @@
                               star[i][j]="*";
                         } n=n+1;
                   }
-               }
+               } //별찍기
 
      for(var n=0; n<=arguments.length; n++){ 
 if(score[n]==max) star[11-score[n]][length]="<-max";
@@ -52,7 +52,7 @@ if(score[n]==min) star[11-score[n]][length]="<-min"; }
             for(var j=0; j<=arguments.length; j++){
                document.write(star[i][j]);
             }document.write("<br>");
-         }
+         } //표 출력
    }
       print_scores_chart(1, 2, 3, 4, 5);
       print_scores_chart(10, 1, 10, 1, 5, 5);
