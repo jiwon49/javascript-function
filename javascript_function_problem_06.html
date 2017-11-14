@@ -24,27 +24,27 @@
                }
          for(var i=1;i<11;i++){
             for(var j=0; j<arguments.length; j++){
-               star[i][j]="¡¡";
+               star[i][j]="¡Ù";
             }
          }
 
    for(var i=0; i<arguments.length; i++){
-      star[0][i]="£­";
-      star[11][i]="£­";
+      star[0][i]="-";
+      star[11][i]="-";
    }
 
          var n=0;
          while(n<=j){
          for(var j=0; j<arguments.length; j++){
                      for(var i=10;i>10-score[n];i--){
-                              star[i][j]="£ª";
+                              star[i][j]="¡Ú";
                         } n=n+1;
                   }
                }
 
      for(var n=0; n<=arguments.length; n++){ 
-if(score[n]==max) star[11-score[n]][length]="¡çmax";
-if(score[n]==min) star[11-score[n]][length]="¡çmin"; }
+if(score[n]==max) star[11-score[n]][length]="<-max";
+if(score[n]==min) star[11-score[n]][length]="<-min"; }
 
 
          document.write("<br>");   
